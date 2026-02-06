@@ -1,0 +1,22 @@
+{
+  "words": [
+    { "id": "word1", "label": "Word List 1", "file": "words/word1.json" },
+    { "id": "word2", "label": "Word List 2", "file": "words/word2.json" },
+    { "id": "word3", "label": "Word List 3", "file": "words/word3.json" },
+    { "id": "word4", "label": "Word List 4", "file": "words/word4.json" },
+    { "id": "word5", "label": "Word List 5", "file": "words/word5.json" },
+    { "id": "word6", "label": "Word List 6", "file": "words/word6.json" },
+    { "id": "word7", "label": "Word List 7", "file": "words/word7.json" },
+    { "id": "word8", "label": "Word List 8", "file": "words/word8.json" }
+  ],
+  "phrases": [
+    { "id": "phrase1", "label": "Phrase List 1", "file": "phrases/phrase1.json" },
+    { "id": "phrase2", "label": "Phrase List 2", "file": "phrases/phrase2.json" },
+    { "id": "phrase3", "label": "Phrase List 3", "file": "phrases/phrase3.json" },
+    { "id": "phrase4", "label": "Phrase List 4", "file": "phrases/phrase4.json" },
+    { "id": "phrase5", "label": "Phrase List 5", "file": "phrases/phrase5.json" }
+  ],
+  "sentences": [
+    { "id": "sentence1", "label": "Sentence List 1", "file": "sentences/sentence1.json" }
+  ]
+}

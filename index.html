@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>我爱背单词</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/light-control.css">
+</head>
+<body>
+  <!-- Intro screen -->
+  <div id="intro" class="screen intro-screen">
+    <div class="intro-content">
+      <div id="typeText" class="type-text" aria-hidden="false"></div>
+      <button id="startBtn" class="all-btn start-circle hidden" aria-label="Start">Start</button>
+    </div>
+  </div>
+
+  <!-- 模式切换按钮 - 使用新的3D样式 -->
+  <div id="modeSwitch" class="mode-switch hidden">
+    <div class="radio-input">
+      <label class="label">
+        <div class="back-side"></div>
+        <input type="radio" id="btn-word" name="mode-radio" value="word" />
+        <span class="text">WORD</span>
+        <span class="bottom-line"></span>
+      </label>
+      <label class="label">
+        <div class="back-side"></div>
+        <input type="radio" id="btn-phrase" name="mode-radio" value="phrase" />
+        <span class="text">PHRASE</span>
+        <span class="bottom-line"></span>
+      </label>
+      <label class="label">
+        <div class="back-side"></div>
+        <input type="radio" id="btn-sentence" name="mode-radio" value="sentence" />
+        <span class="text">SENT</span>
+        <span class="bottom-line"></span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Source selection screen -->
+  <div id="selection" class="screen selection-screen hidden" aria-hidden="true">
+    <div class="sel-inner">
+      <h2 id="selectionTitle">Choose the file </h2>
+      <div id="sourceList" class="source-list"></div>
+      <div id="selSpinner" class="spinner hidden" aria-hidden="true"></div>
+    </div>
+  </div>
+  
+
+  <!-- Main app screen (flashcard) -->
+  <header class="topbar">
+    <button id="overviewBtn" class="all-btn overview-btn" title="全览单词">⦿</button>
+    <button id="rechooseBtn" class="all-btn rechoose-btn hidden" title="重新选择词库">R</button>
+  </header>
+
+  <main class="container hidden" id="mainApp" aria-hidden="true">
+    <div id="card" class="card" aria-live="polite">
+      <div id="word" class="word" role="button" tabindex="0" title="点击发音"></div>
+      <div id="example" class="example" role="button" tabindex="0" title="点击查看释义卡片"></div>
+    </div>
+  </main>
+
+  <!-- 弹出的卡片 -->
+  <div id="overlay" class="overlay hidden" aria-hidden="true">
+    <div id="infoCard" class="info-card">
+      <div class="info-header">
+        <strong id="infoWord"></strong>
+      </div>
+      <div id="infoMeaning" class="info-meaning"></div>
+      <p class="hint">向左或向右滑动卡片以移除并显示下一个单词</p>
+    </div>
+  </div>
+
+  <!-- Overview 模态（显示单词全览） -->
+  <div id="overviewModal" class="overlay hidden" aria-hidden="true">
+    <div class="overview-card" role="dialog" aria-modal="true" aria-label="单词全览">
+      <div class="overview-header">
+        <strong>单词全览</strong>
+        <button id="overviewClose" class="close-btn" title="关闭">✕</button>
+      </div>
+      <div id="overviewList" class="overview-list" tabindex="0">
+        <!-- 这里由 JS 填充：每项显示 word + meaning -->
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/app.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/light-control.js"></script>
+</body>
+</html>
