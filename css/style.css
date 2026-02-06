@@ -275,7 +275,7 @@ body{
   align-items:center;
   justify-content:center;
   background:rgba(10,11,13,0.45);
-  z-index:40;
+  z-index:105;
 }
 
 /* 夜间模式下 overlay 更深 */
@@ -465,3 +465,25 @@ body{
 .overview-item .m{color:var(--text-hover);margin-left:12px; transition: color 0.3s ease;}
 
 /* reuse existing .hidden for overlay */
+/* 移动端触摸优化 */
+@media (hover: none) and (pointer: coarse) {
+  /* 词库按钮 */
+  .source-item:active {
+    color: var(--text-active);
+    box-shadow: inset 4px 4px 12px var(--source-shadow-1), 
+                inset -4px -4px 12px var(--source-shadow-2);
+    transition: all 0.1s !important;
+  }
+  
+  /* Start按钮 */
+  .all-btn:active {
+    font-size: calc(var(--btn-font-size, 40px) - 2px);
+    color: var(--btn-text-hover);
+    box-shadow: 0 12px 25px -4px var(--btn-shadow-main), 
+                inset 0 -8px 30px 1px rgba(255, 255, 255, 0.3), 
+                0 -10px 15px -1px var(--btn-shadow-light), 
+                inset 0 8px 25px 0 rgba(0, 0, 0, 0.4), 
+                inset 0 0 10px 1px rgba(255, 255, 255, 0.3);
+    transition: all 0.1s !important;
+  }
+}
