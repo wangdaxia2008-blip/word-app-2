@@ -7,14 +7,19 @@
     { "id": "word5", "label": "Word List 5", "file": "words/word5.json" },
     { "id": "word6", "label": "Word List 6", "file": "words/word6.json" },
     { "id": "word7", "label": "Word List 7", "file": "words/word7.json" },
-    { "id": "word8", "label": "Word List 8", "file": "words/word8.json" }
+    { "id": "word8", "label": "Word List 8", "file": "words/word8.json" },
+    { "id": "word9-week1", "label": "Word List 9 (Week 1)", "file": "words/word9-week1.json" },
+    { "id": "word10-week1", "label": "Word List 10 (Week 1)", "file": "words/word10-week1.json" },
+    { "id": "word11-week2", "label": "Word List 11 (Week 2)", "file": "words/word11-week2.json" },
+    { "id": "word12-week3", "label": "Word List 12 (Week 3)", "file": "words/word12-week3.json" }
   ],
   "phrases": [
     { "id": "phrase1", "label": "Phrase List 1", "file": "phrases/phrase1.json" },
     { "id": "phrase2", "label": "Phrase List 2", "file": "phrases/phrase2.json" },
     { "id": "phrase3", "label": "Phrase List 3", "file": "phrases/phrase3.json" },
     { "id": "phrase4", "label": "Phrase List 4", "file": "phrases/phrase4.json" },
-    { "id": "phrase5", "label": "Phrase List 5", "file": "phrases/phrase5.json" }
+    { "id": "phrase5", "label": "Phrase List 5", "file": "phrases/phrase5.json" },
+    { "id": "phrase6-week1to3", "label": "Phrase List 6 (Week 1-3)", "file": "phrases/phrase6-week1to3.json" }
   ],
   "sentences": [
     { "id": "sentence1", "label": "Sentence List 1", "file": "sentences/sentence1.json" }
